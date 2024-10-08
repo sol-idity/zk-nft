@@ -1,0 +1,19 @@
+[toolchain]
+
+[features]
+seeds = false
+skip-lint = false
+
+[programs.localnet]
+stake = "stk3g78wHcLTHgAqedaaxpqAvaDDRkxFj4qY4ew3CG4"
+zk_nft = "zkNFTi24GW95YYfM8jNM2tDDPmDnDm7EQuze8jJ66sn"
+
+[registry]
+url = "https://api.apr.dev"
+
+[provider]
+cluster = "Localnet"
+wallet = "/Users/nelson/.config/solana/id.json"
+
+[scripts]
+test = "pnpm ts-mocha -p ./tsconfig.json -t 1000000 tests/**/*.ts"

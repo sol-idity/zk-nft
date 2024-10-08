@@ -1,0 +1,2 @@
+pub const TRANSFER_DELEGATE_PLUGIN_POS: u8 = 0;
+pub const FREEZE_DELEGATE_PLUGIN_POS: u8 = 1;

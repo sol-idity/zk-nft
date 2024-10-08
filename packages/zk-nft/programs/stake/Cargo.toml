@@ -1,0 +1,29 @@
+[package]
+name = "stake"
+version = "0.1.0"
+description = "Created with Anchor"
+edition = "2021"
+
+[lib]
+crate-type = ["cdylib", "lib"]
+name = "stake"
+
+[features]
+no-entrypoint = []
+no-idl = []
+no-log-ix-name = []
+cpi = ["no-entrypoint"]
+default = ["idl-build", "cpi-context"]
+cpi-context = []
+idl-build = ["anchor-lang/idl-build", "light-sdk/idl-build"]
+
+[dependencies]
+anchor-lang = "0.29.0"
+light-system-program = { git = "https://github.com/Lightprotocol/light-protocol.git", tag = "v.1.0.0", version = "1.0.0", features = ["no-entrypoint"] }
+light-hasher = { git = "https://github.com/Lightprotocol/light-protocol.git", tag = "v.1.0.0", version = "1.0.0" }
+light-sdk = { git = "https://github.com/Lightprotocol/light-protocol.git", tag = "v.1.0.0", version = "0.8.0" }
+light-utils = { git = "https://github.com/Lightprotocol/light-protocol.git", tag = "v.1.0.0", version = "1.0.0" }
+zk-nft = { path = "../zk-nft", features = ["cpi"]}
+
+[target.'cfg(not(target_os = "solana"))'.dependencies]
+solana-sdk = "=1.18.22"
