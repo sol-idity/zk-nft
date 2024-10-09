@@ -35,7 +35,7 @@ const connection = new Connection("http://localhost:8899", {
     authority: keypair.publicKey,
     payer: keypair.publicKey,
     // lookupTable: new PublicKey("Dh74qoNrgMYzk4ZFZenKS2f9gSA9AqXrcgYzyBia1r3W"),
-    lookupTable: new PublicKey("CCVnHw6Sxp4DFPa3VufHLXkZr2Dzemo4wjDU4QKVZtF8"),
+    lookupTable: new PublicKey("DrN7o6QST1mMAfNiVLXSSghuiawp4CYdYSzWR8PnP9Gj"),
     addresses: [
       new PublicKey(getRegisteredProgramPda()),
       new PublicKey(noopProgram),

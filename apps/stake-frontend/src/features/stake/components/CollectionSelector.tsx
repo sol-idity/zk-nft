@@ -53,7 +53,7 @@ export default function CollectionSelector() {
                 <CommandItem
                   key={collection.value}
                   value={collection.value}
-                  onSelect={(currentValue) => {
+                  onSelect={(currentValue: string) => {
                     setValue(currentValue === value ? "" : currentValue);
                     setOpen(false);
                   }}

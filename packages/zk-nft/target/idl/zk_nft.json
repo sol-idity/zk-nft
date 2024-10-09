@@ -743,8 +743,5 @@
       "name": "InvalidPluginsToInitialize",
       "msg": "Invalid plugins to initialize"
     }
-  ],
-  "metadata": {
-    "address": "zkNFTi24GW95YYfM8jNM2tDDPmDnDm7EQuze8jJ66sn"
-  }
+  ]
 }

@@ -1,7 +1,9 @@
 "use client";
 
+import { AlertCircle } from "lucide-react";
 import React, { useState } from "react";
 
+import { Alert, AlertDescription, AlertTitle } from "@/components/ui/alert";
 import { cn } from "@/lib/utils";
 
 import CollectionSelector from "./CollectionSelector";
@@ -16,6 +18,15 @@ export default function StakePage() {
   return (
     <StakePageRoot>
       <StakeHeader />
+      <Alert>
+        <AlertCircle className="h-5 w-5" />
+        <AlertTitle className="font-bold text-lg">Notice: No Rewards for Staking</AlertTitle>
+        <AlertDescription>
+          This zkNFT staking website is for demonstration purposes only. No
+          utility or rewards from staking are promised or guaranteed. Please do
+          not expect any benefits from using this platform.
+        </AlertDescription>
+      </Alert>
       <StakeContent>
         <ItemsControllerWrapper>
           <CollectionSelector />

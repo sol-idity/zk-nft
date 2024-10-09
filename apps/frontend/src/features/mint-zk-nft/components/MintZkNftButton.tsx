@@ -34,6 +34,11 @@ export const MintZkNftButton = () => {
               if (errorMessage.startsWith("Transaction simulation failed:")) {
                 throw new Error(errorMessage);
               }
+
+              const statusCode = error.response?.status;
+              if (statusCode === 403 || statusCode === 409) {
+                throw new Error(errorMessage);
+              }
             }
             console.warn("Mint failed, retrying... Error:", error);
             await new Promise((resolve) => setTimeout(resolve, 1000));

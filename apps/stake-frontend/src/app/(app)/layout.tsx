@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import React from "react";
 
-import SiteFooter from "@/components/common/SiteFooter";
 import SiteHeader from "@/components/common/SiteHeader";
 
 import { siteConfig } from "../config/site";

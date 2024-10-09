@@ -1,15 +1,9 @@
 import React from "react";
 
 import Typography from "@/components/common/Typography";
-import { StyledSkeleton } from "@/components/ui/skeleton";
 import { cn } from "@/lib/utils";
-import { CollectionStakeInfo } from "@/types/resources";
-
-import { useCollection } from "../hooks/useCollection";
 
 export default function StakeHeader() {
-  const { status, data } = useCollection("zkNft");
-
   return (
     <StakedHeaderRoot>
       <Typography variant="h1" className="text-center">
@@ -21,28 +15,28 @@ export default function StakeHeader() {
   );
 }
 
-function StakedInfo({
-  isLoading,
-  info,
-}: {
-  isLoading: boolean;
-  info?: CollectionStakeInfo;
-}) {
-  return (
-    <StakedInfoWrapper>
-      {isLoading ? (
-        <StyledSkeleton variant="h2" />
-      ) : (
-        <Typography variant="h2" as="p" truncate className="break-words w-full">
-          {info ? info.totalStaked.toLocaleString() : "0"}
-        </Typography>
-      )}
-      <Typography variant="small" as="h4">
-        Total Staked 🔒
-      </Typography>
-    </StakedInfoWrapper>
-  );
-}
+// function StakedInfo({
+//   isLoading,
+//   info,
+// }: {
+//   isLoading: boolean;
+//   info?: CollectionStakeInfo;
+// }) {
+//   return (
+//     <StakedInfoWrapper>
+//       {isLoading ? (
+//         <StyledSkeleton variant="h2" />
+//       ) : (
+//         <Typography variant="h2" as="p" truncate className="break-words w-full">
+//           {info ? info.totalStaked.toLocaleString() : "0"}
+//         </Typography>
+//       )}
+//       <Typography variant="small" as="h4">
+//         Total Staked 🔒
+//       </Typography>
+//     </StakedInfoWrapper>
+//   );
+// }
 
 function StakedHeaderRoot({
   children,
@@ -62,20 +56,20 @@ function StakedHeaderRoot({
   );
 }
 
-function StakedInfoWrapper({
-  children,
-  className,
-  ...props
-}: React.HTMLAttributes<HTMLDivElement>) {
-  return (
-    <div
-      className={cn(
-        "flex flex-col items-start gap-1 border border-border rounded-lg p-2 sm:min-w-48 w-full sm:w-fit sm:py-4 sm:px-12 bg-content-foreground shadow-lg",
-        className
-      )}
-      {...props}
-    >
-      {children}
-    </div>
-  );
-}
+// function StakedInfoWrapper({
+//   children,
+//   className,
+//   ...props
+// }: React.HTMLAttributes<HTMLDivElement>) {
+//   return (
+//     <div
+//       className={cn(
+//         "flex flex-col items-start gap-1 border border-border rounded-lg p-2 sm:min-w-48 w-full sm:w-fit sm:py-4 sm:px-12 bg-content-foreground shadow-lg",
+//         className
+//       )}
+//       {...props}
+//     >
+//       {children}
+//     </div>
+//   );
+// }

@@ -13,12 +13,17 @@
     "airdrop:local": "solana airdrop 1000 CuKKajwy7Md7141rgyjKee98YrkkNf2z994o6vCJysEr -u http://localhost:8899",
     "deploy:local": "anchor deploy --program-name zk_nft --provider.cluster http://localhost:8899  --program-keypair target/deploy/program-keypair.json  --provider.wallet target/deploy/authority-keypair.json",
     "deploy:stake:local": "anchor deploy --program-name stake --provider.cluster http://localhost:8899  --program-keypair target/deploy/stake-keypair.json  --provider.wallet target/deploy/authority-keypair.json",
+    "extend": "solana program extend zkNFTi24GW95YYfM8jNM2tDDPmDnDm7EQuze8jJ66sn 19000 -u $MAINNET_RPC -k target/deploy/authority-keypair.json",
     "extend:local": "solana program extend zkNFTi24GW95YYfM8jNM2tDDPmDnDm7EQuze8jJ66sn 30000 -u http://localhost:8899 -k target/deploy/authority-keypair.json",
     "extend:stake:local": "solana program extend stk3g78wHcLTHgAqedaaxpqAvaDDRkxFj4qY4ew3CG4 60000 -u http://localhost:8899 -k target/deploy/authority-keypair.json",
     "write-buffer": "solana program write-buffer --with-compute-unit-price 1000 target/deploy/zk_nft.so -u $MAINNET_RPC -k target/deploy/authority-keypair.json --buffer buffer.json --max-sign-attempts 1000 --use-rpc",
+    "write-buffer:stake": "solana program write-buffer --with-compute-unit-price 1000 target/deploy/stake.so -u $MAINNET_RPC -k target/deploy/authority-keypair.json --buffer stake-buffer.json --max-sign-attempts 1000 --use-rpc",
     "deploy": "solana program deploy --with-compute-unit-price 1000 -u $MAINNET_RPC -k target/deploy/authority-keypair.json --buffer buffer.json --program-id target/deploy/program-keypair.json",
+    "deploy:stake": "solana program deploy --with-compute-unit-price 1000 -u $MAINNET_RPC -k target/deploy/authority-keypair.json --buffer stake-buffer.json --program-id target/deploy/stake-keypair.json",
     "test": "anchor test --skip-deploy --skip-local-validator --skip-build --provider.wallet target/deploy/authority-keypair.json",
-    "close-buffers": "solana program close --buffers -u $MAINNET_RPC -k target/deploy/authority-keypair.json"
+    "close-buffers": "solana program close --buffers -u $MAINNET_RPC -k target/deploy/authority-keypair.json",
+    "idl": "anchor idl upgrade -f target/idl/zk_nft.json zkNFTi24GW95YYfM8jNM2tDDPmDnDm7EQuze8jJ66sn --provider.wallet target/deploy/authority-keypair.json --provider.cluster $MAINNET_RPC",
+    "idl:stake": "anchor idl upgrade -f target/idl/stake.json stk3g78wHcLTHgAqedaaxpqAvaDDRkxFj4qY4ew3CG4 --provider.wallet target/deploy/authority-keypair.json --provider.cluster $MAINNET_RPC"
   },
   "dependencies": {
     "@coral-xyz/anchor": "0.29.0",

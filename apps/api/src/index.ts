@@ -3,7 +3,7 @@ import { cors } from "hono/cors";
 import { createRpc } from "@lightprotocol/stateless.js";
 import stake from "./stake/stake.handler";
 import unstake from "./unstake/unstake.handler";
-import mint from "./mint/schemas/mint.handler";
+import mint from "./mint/mint.handler";
 import { HTTPException } from "hono/http-exception";
 import { StatusCode } from "hono/utils/http-status";
 
@@ -12,6 +12,8 @@ const app = getAppHono();
 app.use(
   cors({
     origin: "*",
+    allowHeaders: ["Content-Type", "Authorization", "Accept-Encoding"],
+    allowMethods: ["GET", "POST", "PUT", "OPTIONS"],
   })
 );
 

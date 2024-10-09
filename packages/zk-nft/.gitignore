@@ -9,3 +9,4 @@ target/*
 !target/idl
 !target/types
 buffer.json
+stake-buffer.json

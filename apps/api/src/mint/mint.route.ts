@@ -1,6 +1,6 @@
 import { createRoute } from "@hono/zod-openapi";
-import { InstructionsResponseSchema } from "../../common/schemas/instructions-response.schema";
-import { MintSchema } from "./mint.schema";
+import { InstructionsResponseSchema } from "../common/schemas/instructions-response.schema";
+import { MintSchema } from "./schemas/mint.schema";
 
 export const mintRoute = createRoute({
   description: "Mint zkNFT",

@@ -20,7 +20,7 @@ const connection = new Connection("http://localhost:8899", {
     authority: keypair.publicKey,
     payer: keypair.publicKey,
     // recentSlot: await connection.getSlot(),
-    recentSlot: 791
+    recentSlot: 135
   });
 
   const blockhash = await connection.getLatestBlockhash();

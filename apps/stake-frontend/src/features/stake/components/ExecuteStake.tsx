@@ -155,6 +155,7 @@ export default function ExecuteStake({ mintItem }: ExecuteStakeProps) {
           </ToastDescriptionRoot>
         ),
       });
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
     } catch (e: any) {
       update({
         id,

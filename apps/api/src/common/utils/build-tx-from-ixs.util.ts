@@ -10,7 +10,7 @@ import {
 import { getPriorityFees } from "./get-priority-fees.util";
 
 export const LOOKUP_TABLE_ADDRESS = // new PublicKey("Dh74qoNrgMYzk4ZFZenKS2f9gSA9AqXrcgYzyBia1r3W") // prod lookup table
-  new PublicKey("CCVnHw6Sxp4DFPa3VufHLXkZr2Dzemo4wjDU4QKVZtF8"); // dev lookup table
+  new PublicKey("DrN7o6QST1mMAfNiVLXSSghuiawp4CYdYSzWR8PnP9Gj"); // dev lookup table
 
 export const buildTxFromIxs = async ({
   rpc,

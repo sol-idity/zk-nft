@@ -4,7 +4,7 @@ import React from "react";
 import { StakeItemsGrid } from "@/components/common/CommonStyled";
 import Typography from "@/components/common/Typography";
 
-import { useAsset, useUserAssetIds } from "../hooks/useAssets";
+import { useUserAssetIds } from "../hooks/useAssets";
 import { LoadingMintItemCards, MintItemCard } from "./MintItemCard";
 
 interface StakeItemsProps {
@@ -15,7 +15,7 @@ interface StakeItemsProps {
   };
 }
 
-export default function StakeItems({ collName, filters }: StakeItemsProps) {
+export default function StakeItems({ filters }: StakeItemsProps) {
   const { publicKey } = useWallet();
   // const { data, status } = useAsset({
   //   collName,
