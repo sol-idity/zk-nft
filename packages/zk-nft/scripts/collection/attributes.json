@@ -1,0 +1,362 @@
+[
+  [
+    {
+      "trait_type": "Background",
+      "value": "Green"
+    },
+    {
+      "trait_type": "Knowledge",
+      "value": "100"
+    }
+  ],
+  [
+    {
+      "trait_type": "Background",
+      "value": "White"
+    },
+    {
+      "trait_type": "Knowledge",
+      "value": "145"
+    }
+  ],
+  [
+    {
+      "trait_type": "Background",
+      "value": "Orange"
+    },
+    {
+      "trait_type": "Knowledge",
+      "value": "145"
+    }
+  ],
+  [
+    {
+      "trait_type": "Background",
+      "value": "Orange"
+    },
+    {
+      "trait_type": "Knowledge",
+      "value": "100"
+    }
+  ],
+  [
+    {
+      "trait_type": "Background",
+      "value": "Indigo"
+    },
+    {
+      "trait_type": "Knowledge",
+      "value": "145"
+    }
+  ],
+  [
+    {
+      "trait_type": "Background",
+      "value": "Red"
+    },
+    {
+      "trait_type": "Knowledge",
+      "value": "145"
+    }
+  ],
+  [
+    {
+      "trait_type": "Background",
+      "value": "Violet"
+    },
+    {
+      "trait_type": "Knowledge",
+      "value": "145"
+    }
+  ],
+  [
+    {
+      "trait_type": "Background",
+      "value": "Green"
+    },
+    {
+      "trait_type": "Knowledge",
+      "value": "145"
+    }
+  ],
+  [
+    {
+      "trait_type": "Background",
+      "value": "Yellow"
+    },
+    {
+      "trait_type": "Knowledge",
+      "value": "145"
+    }
+  ],
+  [
+    {
+      "trait_type": "Background",
+      "value": "Red"
+    },
+    {
+      "trait_type": "Knowledge",
+      "value": "100"
+    }
+  ],
+  [
+    {
+      "trait_type": "Background",
+      "value": "Indigo"
+    },
+    {
+      "trait_type": "Knowledge",
+      "value": "100"
+    }
+  ],
+  [
+    {
+      "trait_type": "Background",
+      "value": "White"
+    },
+    {
+      "trait_type": "Knowledge",
+      "value": "100"
+    }
+  ],
+  [
+    {
+      "trait_type": "Background",
+      "value": "Yellow"
+    },
+    {
+      "trait_type": "Knowledge",
+      "value": "100"
+    }
+  ],
+  [
+    {
+      "trait_type": "Background",
+      "value": "Black"
+    },
+    {
+      "trait_type": "Knowledge",
+      "value": "145"
+    }
+  ],
+  [
+    {
+      "trait_type": "Background",
+      "value": "Violet"
+    },
+    {
+      "trait_type": "Knowledge",
+      "value": "100"
+    }
+  ],
+  [
+    {
+      "trait_type": "Background",
+      "value": "Black"
+    },
+    {
+      "trait_type": "Knowledge",
+      "value": "100"
+    }
+  ],
+  [
+    {
+      "trait_type": "Background",
+      "value": "Blue"
+    },
+    {
+      "trait_type": "Knowledge",
+      "value": "100"
+    }
+  ],
+  [
+    {
+      "trait_type": "Background",
+      "value": "Blue"
+    },
+    {
+      "trait_type": "Knowledge",
+      "value": "145"
+    }
+  ],
+  [
+    {
+      "trait_type": "Background",
+      "value": "Green"
+    },
+    {
+      "trait_type": "Knowledge",
+      "value": "0"
+    }
+  ],
+  [
+    {
+      "trait_type": "Background",
+      "value": "White"
+    },
+    {
+      "trait_type": "Knowledge",
+      "value": "0"
+    }
+  ],
+  [
+    {
+      "trait_type": "Background",
+      "value": "Indigo"
+    },
+    {
+      "trait_type": "Knowledge",
+      "value": "1"
+    }
+  ],
+  [
+    {
+      "trait_type": "Background",
+      "value": "Yellow"
+    },
+    {
+      "trait_type": "Knowledge",
+      "value": "1"
+    }
+  ],
+  [
+    {
+      "trait_type": "Background",
+      "value": "Black"
+    },
+    {
+      "trait_type": "Knowledge",
+      "value": "1"
+    }
+  ],
+  [
+    {
+      "trait_type": "Background",
+      "value": "Black"
+    },
+    {
+      "trait_type": "Knowledge",
+      "value": "0"
+    }
+  ],
+  [
+    {
+      "trait_type": "Background",
+      "value": "Orange"
+    },
+    {
+      "trait_type": "Knowledge",
+      "value": "0"
+    }
+  ],
+  [
+    {
+      "trait_type": "Background",
+      "value": "Red"
+    },
+    {
+      "trait_type": "Knowledge",
+      "value": "0"
+    }
+  ],
+  [
+    {
+      "trait_type": "Background",
+      "value": "Violet"
+    },
+    {
+      "trait_type": "Knowledge",
+      "value": "0"
+    }
+  ],
+  [
+    {
+      "trait_type": "Background",
+      "value": "Violet"
+    },
+    {
+      "trait_type": "Knowledge",
+      "value": "1"
+    }
+  ],
+  [
+    {
+      "trait_type": "Background",
+      "value": "Orange"
+    },
+    {
+      "trait_type": "Knowledge",
+      "value": "1"
+    }
+  ],
+  [
+    {
+      "trait_type": "Background",
+      "value": "White"
+    },
+    {
+      "trait_type": "Knowledge",
+      "value": "1"
+    }
+  ],
+  [
+    {
+      "trait_type": "Background",
+      "value": "Blue"
+    },
+    {
+      "trait_type": "Knowledge",
+      "value": "0"
+    }
+  ],
+  [
+    {
+      "trait_type": "Background",
+      "value": "Blue"
+    },
+    {
+      "trait_type": "Knowledge",
+      "value": "1"
+    }
+  ],
+  [
+    {
+      "trait_type": "Background",
+      "value": "Indigo"
+    },
+    {
+      "trait_type": "Knowledge",
+      "value": "0"
+    }
+  ],
+  [
+    {
+      "trait_type": "Background",
+      "value": "Red"
+    },
+    {
+      "trait_type": "Knowledge",
+      "value": "1"
+    }
+  ],
+  [
+    {
+      "trait_type": "Background",
+      "value": "Yellow"
+    },
+    {
+      "trait_type": "Knowledge",
+      "value": "0"
+    }
+  ],
+  [
+    {
+      "trait_type": "Background",
+      "value": "Green"
+    },
+    {
+      "trait_type": "Knowledge",
+      "value": "1"
+    }
+  ]
+]

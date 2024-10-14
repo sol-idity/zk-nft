@@ -1,0 +1,25 @@
+{
+  "$schema": "https://turbo.build/schema.json",
+  "ui": "stream",
+  "globalEnv": ["NEXT_PUBLIC_RPC_ENDPOINT", "NEXT_PUBLIC_API_ENDPOINT"],
+  "tasks": {
+    "build": {
+      "dependsOn": ["^build"],
+      "inputs": ["$TURBO_DEFAULT$", ".env*"],
+      "outputs": [".next/**", "!.next/cache/**"]
+    },
+    "frontend#dev": {
+      "dependsOn": ["@zk-nft/program#build"]
+    },
+    "api#dev": {
+      "dependsOn": ["@zk-nft/program#build"]
+    },
+    "lint": {
+      "dependsOn": ["^lint"]
+    },
+    "dev": {
+      "cache": false,
+      "persistent": true
+    }
+  }
+}

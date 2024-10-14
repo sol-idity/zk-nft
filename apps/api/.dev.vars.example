@@ -1,0 +1,4 @@
+RPC_ENDPOINT=http://localhost:8899
+RPC_ENDPOINT_2=http://localhost:8899
+UPDATE_AUTHORITY_KEYPAIR="[]"
+ENV=development

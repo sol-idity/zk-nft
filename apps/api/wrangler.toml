@@ -1,0 +1,39 @@
+name = "zk-nft-api"
+main = "src/index.ts"
+compatibility_date = "2024-10-07"
+compatibility_flags = [ "nodejs_compat" ]
+
+[[unsafe.bindings]]
+name = "MINT_RATE_LIMITER"
+type = "ratelimit"
+namespace_id = "1001"
+simple = { limit = 3, period = 60 }
+
+[[unsafe.bindings]]
+name = "STAKE_RATE_LIMITER"
+type = "ratelimit"
+namespace_id = "1002"
+simple = { limit = 2, period = 10 }
+
+# [vars]
+# MY_VAR = "my-variable"
+
+# [[kv_namespaces]]
+# binding = "MY_KV_NAMESPACE"
+# id = "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
+
+# [[r2_buckets]]
+# binding = "MY_BUCKET"
+# bucket_name = "my-bucket"
+
+# [[d1_databases]]
+# binding = "DB"
+# database_name = "my-database"
+# database_id = ""
+
+# [ai]
+# binding = "AI"
+
+# [observability]
+# enabled = true
+# head_sampling_rate = 1

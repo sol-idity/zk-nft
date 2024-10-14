@@ -1,0 +1,12 @@
+
+.anchor
+.DS_Store
+**/*.rs.bk
+node_modules
+test-ledger
+.yarn
+target/*
+!target/idl
+!target/types
+buffer.json
+stake-buffer.json
