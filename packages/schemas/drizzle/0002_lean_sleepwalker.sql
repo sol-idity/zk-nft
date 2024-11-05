@@ -1,0 +1,1 @@
+ALTER TABLE `answers` DROP COLUMN `nft_id`;

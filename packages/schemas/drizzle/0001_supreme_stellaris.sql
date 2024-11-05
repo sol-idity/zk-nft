@@ -1,0 +1,1 @@
+ALTER TABLE `answers` ADD `nft_id` integer;

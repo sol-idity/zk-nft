@@ -1,4 +1,5 @@
 export type Bindings = {
+  DB: D1Database;
   RPC_ENDPOINT: string;
   RPC_ENDPOINT_2: string;
   UPDATE_AUTHORITY_KEYPAIR: string;

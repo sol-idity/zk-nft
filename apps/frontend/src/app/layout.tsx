@@ -10,6 +10,12 @@ const inter = Inter({ subsets: ["latin"], variable: "--font-sans" });
 export const metadata: Metadata = {
   title: "zkNFT",
   description: "Zero Knowledge NFT. Only possible on Solana.",
+  openGraph: {
+    title: "zkNFT",
+    type: "website",
+    url: "https://zk.tinys.pl",
+    images: "https://files.tinys.pl/zk-nft-hero.gif",
+  },
 };
 
 export default function RootLayout({

@@ -1,0 +1,27 @@
+{
+  "name": "@zk-nft/schemas",
+  "version": "0.0.0",
+  "exports": {
+    "./answers.schema": "./src/answers.schema.ts"
+  },
+  "scripts": {
+    "lint": "eslint . --max-warnings 0",
+    "check-types": "tsc --noEmit",
+    "generate": "drizzle-kit generate",
+    "migrate": "drizzle-kit migrate",
+    "up": "drizzle-kit up",
+    "push": "drizzle-kit push",
+    "studio": "drizzle-kit studio"
+  },
+  "devDependencies": {
+    "@types/node": "^20.14.12",
+    "@zk-nft/eslint-config": "workspace:*",
+    "@zk-nft/typescript-config": "workspace:*",
+    "eslint": "^8.57.0",
+    "typescript": "^5.2.2"
+  },
+  "dependencies": {
+    "drizzle-kit": "^0.26.2",
+    "drizzle-orm": "^0.35.1"
+  }
+}

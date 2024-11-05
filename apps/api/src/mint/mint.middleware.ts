@@ -25,10 +25,10 @@ export const checkMintEligibility = createMiddleware<
 
   const rpcEndpoint = c.env.RPC_ENDPOINT_2;
   const connection = new Connection(rpcEndpoint, "confirmed");
-  const { recipient } = await c.req.json();
+  const { account } = await c.req.json();
 
   const cacheKey = new Request(
-    `https://getSignaturesForAddress.com/${recipient}`,
+    `https://getSignaturesForAddress.com/${account}`,
     {
       method: "GET",
     }
@@ -36,9 +36,9 @@ export const checkMintEligibility = createMiddleware<
   const cache = caches.default;
   let response = await cache.match(cacheKey);
   if (!response) {
-    console.log(`Fetching signatures for ${recipient} from RPC`);
+    console.log(`Fetching signatures for ${account} from RPC`);
     const signatures = await connection.getSignaturesForAddress(
-      new PublicKey(recipient),
+      new PublicKey(account),
       { limit: 1000 }
     );
     response = new Response(JSON.stringify(signatures));
@@ -47,7 +47,7 @@ export const checkMintEligibility = createMiddleware<
   }
   const signatures: ConfirmedSignatureInfo[] = await response.json();
 
-  const MINT_ELIGIBILITY_DATE_STRING = "2024-10-06T00:00:00.000Z";
+  const MINT_ELIGIBILITY_DATE_STRING = "2024-11-02T00:00:00.000Z";
   const mintEligibilityTimestamp = Math.floor(
     new Date(MINT_ELIGIBILITY_DATE_STRING).getTime() / 1000
   );

@@ -1,0 +1,7 @@
+{
+  "extends": "@zk-nft/typescript-config/base.json",
+  "exclude": ["node_modules"],
+  "compilerOptions": {
+    "types": ["node"]
+  }
+}

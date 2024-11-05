@@ -1,0 +1,14 @@
+{
+  "hosting": {
+    "site": "quiz-result-image",
+    "rewrites": [
+      {
+        "source": "**",
+        "run": {
+          "serviceId": "quiz-result-image",
+          "region": "us-central1"
+        }
+      }
+    ]
+  }
+}

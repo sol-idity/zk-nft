@@ -1,4 +1,3 @@
-import { z } from "@hono/zod-openapi";
 import { PublicKey } from "@solana/web3.js";
 
 export const refinePublicKey = (publicKey: string) => {

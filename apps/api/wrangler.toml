@@ -15,6 +15,11 @@ type = "ratelimit"
 namespace_id = "1002"
 simple = { limit = 2, period = 10 }
 
+[[d1_databases]]
+binding = "DB"
+database_name = "zk-nft-archetype-dev"
+database_id = "9da3c9e8-82d7-4aa0-874d-d99ba86705f1"
+
 # [vars]
 # MY_VAR = "my-variable"
 
@@ -23,13 +28,8 @@ simple = { limit = 2, period = 10 }
 # id = "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
 
 # [[r2_buckets]]
-# binding = "MY_BUCKET"
+# binding = "MY_BUCKET"`
 # bucket_name = "my-bucket"
-
-# [[d1_databases]]
-# binding = "DB"
-# database_name = "my-database"
-# database_id = ""
 
 # [ai]
 # binding = "AI"

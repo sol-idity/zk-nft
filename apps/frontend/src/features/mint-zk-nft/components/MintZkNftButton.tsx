@@ -9,6 +9,7 @@ import { SDK } from "@/common/constants";
 import { isAxiosError } from "axios";
 import { useUserBaseAssets } from "@/features/zk-nft-holdings/hooks/useUserBaseAssets";
 import { backOff } from "exponential-backoff";
+import Link from "next/link";
 
 export const MintZkNftButton = () => {
   const { publicKey, signTransaction } = useWallet();
@@ -83,14 +84,14 @@ export const MintZkNftButton = () => {
   }, []);
 
   return (
-    <Button
-      size="lg"
-      className="text-lg font-bold"
-      disabled={isMinting}
-      onClick={onClick}
-    >
-      {isMinting && <Loader2 className="mr-2 h-4 w-4 animate-spin" />}
-      {!isMinting ? "Mint your zkNFT" : "Minting..."}
+    <Button size="lg" className="text-lg font-bold" asChild>
+      <Link
+        href="https://dial.to/?action=solana-action:https://api.zk.tinys.pl/actions"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        Mint your zkNFT
+      </Link>
     </Button>
   );
 };

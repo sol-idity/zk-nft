@@ -9,8 +9,8 @@
     "check-types": "tsc --noEmit"
   },
   "devDependencies": {
-    "@repo/eslint-config": "workspace:*",
-    "@repo/typescript-config": "workspace:*",
+    "@zk-nft/eslint-config": "workspace:*",
+    "@zk-nft/typescript-config": "workspace:*",
     "@openapitools/openapi-generator-cli": "^2.13.4",
     "eslint": "^8.57.0",
     "typescript": "^5.2.2"
